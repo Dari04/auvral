@@ -20750,6 +20750,19 @@ small,
   width: 3rem;
   position: relative;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.avatar:hover .avatar-img-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display:block;
+}
+.avatar-img-hover {
+  display: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .avatar-img {
@@ -20758,14 +20771,9 @@ small,
   -o-object-fit: cover;
   object-fit: cover;
   background: #e7f2f8;
-  mix-blend-mode: luminosity;
-  border: 1px solid #e7f2f8;
-  filter: hue-rotate(311deg);
+  transition: all 0.3s ease-in-out;
 }
-.avatar-img:hover {
-  mix-blend-mode: normal;
-  filter: none;
-}
+
 .avatar-group {
   padding: 0;
   display: -webkit-box;
